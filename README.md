@@ -1,5 +1,5 @@
 
-# PainlessPrefs [![](https://jitpack.io/v/cesarferreira/painlessprefs.svg)](https://jitpack.io/#cesarferreira/painlessprefs)
+# PainlessPrefs [![](https://jitpack.io/v/cesarferreira/PainlessPrefs.svg)](https://jitpack.io/#cesarferreira/PainlessPrefs)
 
 > Static way to set/get shared preferences
 
@@ -8,12 +8,12 @@ As simple as it gets:
 ```java
 // save key/value pair
 PainlessPrefs.getInstance(context)
-	.save("some boolean key", true);
+	.save("SOME_KEY", true);
 
 // getting it back
 boolean someBoolean =
 	PainlessPrefs.getInstance(context)
-	.getBoolean("some boolean key", false);
+	.getBoolean("SOME_KEY", DEFAULT_VALUE);
 
 ```
 
@@ -33,6 +33,6 @@ allprojects {
 Now add your dependency:
 ```groovy
 dependencies {
-	compile 'com.github.cesarferreira:painlessprefs:0.1.0'
+	compile 'com.github.cesarferreira:PainlessPrefs:0.1.0'
 }
 ```
